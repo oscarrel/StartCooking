@@ -15,10 +15,31 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//ruta muestra lista ingredientes luis
 Route::get('/ingredientes', 'IngredienteController@lista');
 
-Route::get('/ingredientes/{id}', 'IngredienteController@detalle');
+//prueba paso de variable
+Route::get('/ingredientes/test1', 'IngredienteController@test1');
 
-Route::get('/ingredientes/{id}/recetas', 'IngredienteController@recetas');
+//prueba consulta BBDD con SQL elemento en vector
+Route::get('/ingredientes/test2', 'IngredienteController@test2');
 
-Route::post('/ingredientes', 'IngredienteController@nuevo');
+//prueba consulta BBDD con SQL en lista
+Route::get('/ingredientes/test3', 'IngredienteController@test3');
+
+//prueba consulta BBDD con SQL paso id de receta para que la muestre
+Route::get('/ingredientes/test4/{id}', 'IngredienteController@test4');
+
+//prueba consulta BBDD con SQL paso nombre de receta para buscar el id
+//paso el id para que busque los ingredientes asociados
+//Muestra los ingredientes y las cantidades
+Route::get('/ingredientes/test5/{nombreRec}', 'IngredienteController@test5');
+
+
+Route::get('/ingredientes/testvector', 'IngredienteController@testvector');
+
+
+
+//Muestra articulo concreto
+//Route::get('/ingredientes/{id}', 'IngredienteController@detalle');
+

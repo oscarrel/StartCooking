@@ -23,7 +23,7 @@
                     
                     @foreach ($ing_receta_test as $nt)
                     <li>
-                        {{$nt->ing_id_ing}} --> Cantidad: {{$nt->cantidad}}
+                        {{$nt->ing_nombre}}
                     </li>    
                     @endforeach
                     

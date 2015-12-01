@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace startcooking\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

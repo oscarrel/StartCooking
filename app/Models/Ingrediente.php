@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace startcooking\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
