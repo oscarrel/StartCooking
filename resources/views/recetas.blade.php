@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lista de ingredientes</title>
+        <title>Receta Completa</title>
 
         <!-- Bootstrap -->
         <link href="{{ asset('twbs/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">
@@ -19,59 +19,24 @@
             <div class="content">
                 <div class="title">Lista de ingredientes</div>
                 <ul class="list-unstyled">
-  
-                    
                     
                     
                     <li>
-                        Nombre Receta --> {{$receta_test->nombre_receta}}
+                        Nombre Receta --> {{$receta_completa->nombre_receta}}
                     </li>
                     <li>
-                        Preparacion --> {{$receta_test->preparacion}}
+                        Preparacion --> {{$receta_completa->preparacion}}
                     </li>
                     <li>
-                        Duracion --> {{$receta_test->duracion}}
+                        Duracion --> {{$receta_completa->duracion}}
                     </li>
-                    @foreach ($receta_test->recetaTieneIngrediente as $nt)
+                    @foreach ($receta_completa->recetaTieneIngrediente as $nt)
                     <li>
                         Ingrediente --> {{$nt->ingrediente->nombre_ing}} .... Cantidad --> {{$nt->cantidad}} .... Calorias --> {{$nt->ingrediente->calorias}}
                     </li>
                     
                     @endforeach
                     
-                    
-                    
-                    {{--
-                    @foreach ($ing_receta_test as $nt)
-                    <li>
-                        {{$nt->ing_nombre}}
-                    </li>    
-                    @endforeach
-                    --}}
-                    
-                    
-                    
-                    
-                {{--@foreach ($receta_test as $nt)
-                    <li>
-                        <strong>{{$nt->nombre_receta}}</strong>
-                        {{$nt->preparacion}}
-                    </li>    
-                    @endforeach--}}
-                    
-                    
-                  
-                    
-                {{--@foreach ($ingredientes as $ingrediente)
-                    <li>
-                        {{$ingrediente->id_ing}} --> {{$ingrediente->nombre_ing}}
-                    </li>    
-                    @endforeach--}}
-                    
-                    
-                    
-                    <li>hola mundo</li>
-                    <li>hola mundo2</li>
                 </ul>
             </div>
         </div>

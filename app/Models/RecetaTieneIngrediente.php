@@ -7,17 +7,17 @@
  */
 
 /**
- * Description of Ingrediente
+ * Description of RecetaTieneIngrediente
  *
  * @author halporta
  */
 namespace startcooking\Models;
 
-
-class Ingrediente {
+class RecetaTieneIngrediente {
     //put your code here
-    var $id_ing;
-    var $nombre_ing;
-    var $descripcion_ing;
-    var $calorias;
+    var $receta_id_receta;
+    var $ing_id_ing;
+    var $cantidad;
+    var $ingrediente;
+    //objeto de la clase ingrediente
 }
